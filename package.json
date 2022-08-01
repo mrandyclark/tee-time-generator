@@ -1,0 +1,25 @@
+{
+	"name": "tee-time-generator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+		"generate": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mrandyclark/tee-time-generator.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mrandyclark/tee-time-generator/issues"
+	},
+	"homepage": "https://github.com/mrandyclark/tee-time-generator#readme",
+	"dependencies": {
+		"combinations-generator": "^1.0.1",
+		"prettier": "^2.5.1"
+	}
+}
