@@ -1,3 +1,6 @@
+
+const combinationGenerator = require("combinations-generator")
+
 const onlyUnique = (value, index, self) => {
 	return self.indexOf(value) === index;
 };
@@ -27,6 +30,11 @@ const rounds = [
 ];
 
 const allPlayers = teams.flat();
+
+const combos = combinationGenerator(allPlayers, 4);
+for (let combo of combos) {
+	console.log(combo);
+}
 
 for (let i = 0; i < numberOfRounds; i++) {
 	// generate a list of available players per player
